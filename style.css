@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #091026;
+    width: 100%;
+}
+#logo{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#logo > g   {
+    stroke-dasharray: 2477;
+    stroke-dashoffset: 2477;
+    animation: line-anim 2s ease forwards;
+}
+#logo > g > path{
+     animation: fill 1.5s ease forwards 1.8s;
+}
+#logo > g > g > path{
+     animation: fill 1.5s ease forwards 1.8s;
+}
+
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes fill {
+    from{
+        fill: transparent;
+    }
+    to {
+        fill: white;
+    }
+}
