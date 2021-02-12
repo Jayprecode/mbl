@@ -3,43 +3,5 @@
     padding: 0;
 }
 body {
-    background-color: #091026;
+    background-color: #eeeeee;
 }
-#logo{
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
-#logo > g  {
-    stroke-dasharray: 2477;
-    stroke-dashoffset: 2477;
-    animation: line-anim 2s ease forwards;
-}
-#logo > g > path{
-     animation: fill 1.5s ease-in forwards 1.8s;
-}
-#logo > g > g > path:nth-child(1){
-     animation: fill 1.5s ease-in forwards 1.8s;
-}
-
-
-@keyframes line-anim {
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-@keyframes fill {
-    0%{
-        fill: transparent;
-    }
-    100%{
-        filter:url(#shadow_glow);
-        fill: white;
-        stroke: #fff;
-        transition: 2s ease;
-    }
-
-}
-
